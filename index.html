@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+<script async src="https://ga.jspm.io/npm:es-module-shims@1.5.1/dist/es-module-shims.js"
+    crossorigin="anonymous"></script>
+<script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.152.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.152.0/examples/jsm/"
+      }
+    }
+  </script>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lengh</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
-    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet" />
     <style>
         body {
             background-color: #000;
@@ -67,11 +75,10 @@
         }
 
         .glare-effect {
-    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
-    filter: blur(0.5px);
-}
+            text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
+            filter: blur(0.5px);
+        }
     </style>
-
 </head>
 
 <body>
@@ -80,7 +87,7 @@
     <div class="section glare-effect" id="section0">
         <h1>Lengh</h1>
     </div>
-    
+
     <div class="section" id="section1">
         <a href="https://github.com/lengh/dnd-keeping-project" target="_blank">
             <svg class="icon" viewBox="0 0 24 24">
@@ -88,57 +95,85 @@
             </svg>
         </a>
         <span class="glare-effect">dnd keeping project</span>
-        <div class="description glare-effect">a tool to keep track of a campaign as a player.</div>
+        <div class="description glare-effect">
+            a tool to keep track of a campaign as a player.
+        </div>
     </div>
-    
+
     <div class="section" id="section2">
         <a href="https://github.com/lengh/tiny-e-reader" target="_blank">
             <svg class="icon" viewBox="0 0 24 24">
-                <path d="M18 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H6V4h2v8l2.5-1.5L13 12V4h5v16z"></path>
+                <path
+                    d="M18 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H6V4h2v8l2.5-1.5L13 12V4h5v16z">
+                </path>
             </svg>
         </a>
         <span class="glare-effect">tiny e-reader</span>
-        <div class="description glare-effect">a small website that loads in e-books through javascript and adds readability features.</div>
+        <div class="description glare-effect">
+            a small website that loads in e-books through javascript and adds
+            readability features.
+        </div>
     </div>
-    
+
     <div class="section" id="section3">
         <a href="https://github.com/lengh/rust-api" target="_blank">
             <svg class="icon" viewBox="0 0 24 24">
-                <path d="M20 15.5V8c0-1.1-.9-2-2-2h-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v7.5l1.5-1.5s .2-.2.3-.4H4v-5h1v1h2v-1h10v1h2v-1h1v5h-.8l.3.4L20 15.5zM12 22h-1v-2h1v2zm-7-9H3v4.5l2 2V13zm16 0h-2v6.5l2-2V13z"></path>
+                <path
+                    d="M20 15.5V8c0-1.1-.9-2-2-2h-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v7.5l1.5-1.5s .2-.2.3-.4H4v-5h1v1h2v-1h10v1h2v-1h1v5h-.8l.3.4L20 15.5zM12 22h-1v-2h1v2zm-7-9H3v4.5l2 2V13zm16 0h-2v6.5l2-2V13z">
+                </path>
             </svg>
         </a>
         <span class="glare-effect">rust-api</span>
-        <div class="description glare-effect">small rust api that I use to supply data in a secure and fast manner to other projects.</div>
+        <div class="description glare-effect">
+            small rust api that I use to supply data in a secure and fast manner
+            to other projects.
+        </div>
     </div>
-    
+
     <div class="section" id="section4">
         <a href="https://github.com/lengh/tile-map-tool" target="_blank">
             <svg class="icon" viewBox="0 0 24 24">
-                <path d="M4 4h16v16H4z"></path>
+                <rect x="2" y="2" width="10" height="10" fill="#000" />
+                <rect x="12" y="2" width="10" height="10" fill="#333" />
+                <rect x="2" y="12" width="10" height="10" fill="#666" />
+                <rect x="12" y="12" width="10" height="10" fill="#999" />
             </svg>
         </a>
         <span class="glare-effect">tile-map tool</span>
-        <div class="description glare-effect">a small website where you can make, import, and export tilemaps that you can make and edit on the website.</div>
+        <div class="description glare-effect">
+            a small website where you can make, import, and export tilemaps that
+            you can make and edit on the website.
+        </div>
     </div>
-    
+
+
     <div class="section" id="section5">
         <a href="https://github.com/lengh/msg-seed" target="_blank">
             <svg class="icon" viewBox="0 0 24 24">
-                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4a2 2 0 0 0-2-2zm-7 12h-2v-2h2v2zm0-4h-2V7h2v3z"></path>
+                <path
+                    d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4a2 2 0 0 0-2-2zm-7 12h-2v-2h2v2zm0-4h-2V7h2v3z">
+                </path>
             </svg>
         </a>
         <span class="glare-effect">msg-seed</span>
-        <div class="description glare-effect">small msg'ing service.</div>
+        <div class="description glare-effect">
+            small msg'ing service.
+        </div>
     </div>
-    
+
     <div class="section" id="section6">
         <a href="https://github.com/lengh/flag-rpg" target="_blank">
             <svg class="icon" viewBox="0 0 24 24">
-                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4a2 2 0 0 0-2-2zm-2 14H6l-2 2V4h14v12z"></path>
+                <path
+                    d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4a2 2 0 0 0-2-2zm-2 14H6l-2 2V4h14v12z">
+                </path>
             </svg>
         </a>
         <span class="glare-effect">flag-rpg</span>
-        <div class="description glare-effect">a RPG where you campaign through the world as a bannerman, recruit armies, and carry your team to victory.</div>
+        <div class="description glare-effect">
+            a RPG where you campaign through the world as a bannerman, recruit
+            armies, and carry your team to victory.
+        </div>
     </div>
 
     <a href="mailto:vogeldraak@gmail.com" id="email-address" class="glare-effect">
@@ -147,11 +182,29 @@
         <span class="right-color">gmail.com</span>
     </a>
 
-    <script>
+    <script type="module">
+        import * as THREE from "https://unpkg.com/three@0.152.0/build/three.module.js";
+        import { OrbitControls } from "https://unpkg.com/three@0.152.0/examples/jsm/controls/OrbitControls.js";
+
         let scene, camera, renderer, geometry, material1, material2, mesh1, mesh2;
         let currentColorIndex = 0;
         let currentSection = 0;
-        let colors = ['#FF0000', '#FF7F00', '#FFFF00', '#7FFF00', '#00FF00', '#00FF7F', '#00FFFF', '#007FFF', '#0000FF', '#7F00FF', '#FF00FF', '#FF007F'];
+        let colors = [
+            '#FF0000', '#FF7F00', '#FFFF00', '#7FFF00',
+            '#00FF00', '#00FF7F', '#00FFFF', '#007FFF',
+            '#0000FF', '#7F00FF', '#FF00FF', '#FF007F'
+        ];
+        let isDragging1 = false;
+        let isDragging2 = false;
+        let previousMousePosition1 = { x: 0, y: 0 };
+        let previousMousePosition2 = { x: 0, y: 0 };
+        const raycaster = new THREE.Raycaster();
+        const mouse = new THREE.Vector2();
+        let angularVelocity1 = new THREE.Vector3(0.0, 0.0, 0.0);
+        let angularVelocity2 = new THREE.Vector3(0.0, 0.0, 0.0);
+
+        // Define damping factor to slow down rotation gradually
+        const dampingFactor = 0.98;
 
         function init() {
             scene = new THREE.Scene();
@@ -177,12 +230,17 @@
 
             window.addEventListener('resize', onWindowResize, false);
             document.addEventListener('wheel', onWheel, { passive: false });
+
+            // Add event listeners for mouse events for each shape
+            document.addEventListener('mousedown', onMouseDown);
+            document.addEventListener('mousemove', onMouseMove);
+            document.addEventListener('mouseup', onMouseUp);
+
             animate();
         }
 
         function onWheel(event) {
             event.preventDefault();
-
 
             const atTop = window.scrollY === 0;
             const atBottom = window.scrollY + window.innerHeight >= document.body.scrollHeight;
@@ -218,11 +276,11 @@
             let targetX2 = (currentSection % 2 === 0) ? -2.5 : 2.5;
             let targetY2 = (currentSection % 2 === 0) ? -2.5 : 2.5;
 
-            let dx1 = (targetX1 - mesh1.position.x) * 0.05;
-            let dy1 = (targetY1 - mesh1.position.y) * 0.05;
+            let dx1 = (targetX1 - mesh1.position.x) * 0.01; // Adjust the transition rate here
+            let dy1 = (targetY1 - mesh1.position.y) * 0.01; // Adjust the transition rate here
 
-            let dx2 = (targetX2 - mesh2.position.x) * 0.05;
-            let dy2 = (targetY2 - mesh2.position.y) * 0.05;
+            let dx2 = (targetX2 - mesh2.position.x) * 0.01; // Adjust the transition rate here
+            let dy2 = (targetY2 - mesh2.position.y) * 0.01; // Adjust the transition rate here
 
             mesh1.position.x += dx1;
             mesh1.position.y += dy1;
@@ -250,15 +308,32 @@
 
             document.querySelector('.at-color').style.color = `rgb(${atRGB.r}, ${atRGB.g}, ${atRGB.b})`;
 
-            if (Math.abs(targetX1 - mesh1.position.x) > 0.05 || Math.abs(targetY1 - mesh1.position.y) > 0.05 || Math.abs(targetX2 - mesh2.position.x) > 0.05 || Math.abs(targetY2 - mesh2.position.y) > 0.05) {
+            let mesh1Distance = Math.sqrt(
+                (mesh1.position.x - camera.position.x) ** 2 +
+                (mesh1.position.y - camera.position.y) ** 2 +
+                (mesh1.position.z - camera.position.z) ** 2
+            );
+
+            let mesh2Distance = Math.sqrt(
+                (mesh2.position.x - camera.position.x) ** 2 +
+                (mesh2.position.y - camera.position.y) ** 2 +
+                (mesh2.position.z - camera.position.z) ** 2
+            );
+
+            if (
+                Math.abs(targetX1 - mesh1.position.x) > 0.001 ||
+                Math.abs(targetY1 - mesh1.position.y) > 0.001 ||
+                Math.abs(targetX2 - mesh2.position.x) > 0.001 ||
+                Math.abs(targetY2 - mesh2.position.y) > 0.001
+            ) {
                 requestAnimationFrame(updateMeshPosition);
             }
         }
+
         function animate() {
             requestAnimationFrame(animate);
             renderer.render(scene, camera);
         }
-
 
         function hexToRgb(hex) {
             const bigint = parseInt(hex.substring(1), 16);
@@ -266,6 +341,68 @@
             const g = (bigint >> 8) & 255;
             const b = bigint & 255;
             return { r, g, b };
+        }
+
+        function onMouseDown(event) {
+            event.preventDefault();
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+            raycaster.setFromCamera(mouse, camera);
+            const intersects = raycaster.intersectObjects([mesh1, mesh2]);
+            if (intersects.length > 0) {
+                isDragging1 = intersects[0].object === mesh1;
+                isDragging2 = intersects[0].object === mesh2;
+                previousMousePosition1 = {
+                    x: event.clientX,
+                    y: event.clientY
+                };
+                previousMousePosition2 = {
+                    x: event.clientX,
+                    y: event.clientY
+                };
+            }
+        }
+
+        function onMouseMove(event) {
+            if (isDragging1) {
+                const deltaRotationQuaternion = new THREE.Quaternion().setFromEuler(
+                    new THREE.Euler(
+                        toRadians(event.clientY - previousMousePosition1.y) * 0.2,
+                        toRadians(event.clientX - previousMousePosition1.x) * 0.2,
+                        0,
+                        'XYZ'
+                    )
+                );
+                mesh1.quaternion.multiplyQuaternions(deltaRotationQuaternion, mesh1.quaternion);
+                previousMousePosition1 = {
+                    x: event.clientX,
+                    y: event.clientY
+                };
+            }
+            if (isDragging2) {
+                const deltaRotationQuaternion = new THREE.Quaternion().setFromEuler(
+                    new THREE.Euler(
+                        toRadians(event.clientY - previousMousePosition2.y) * 0.2,
+                        toRadians(event.clientX - previousMousePosition2.x) * 0.2,
+                        0,
+                        'XYZ'
+                    )
+                );
+                mesh2.quaternion.multiplyQuaternions(deltaRotationQuaternion, mesh2.quaternion);
+                previousMousePosition2 = {
+                    x: event.clientX,
+                    y: event.clientY
+                };
+            }
+        }
+
+        function onMouseUp() {
+            isDragging1 = false;
+            isDragging2 = false;
+        }
+
+        function toRadians(degrees) {
+            return degrees * (Math.PI / 180);
         }
 
         init();
