@@ -1,7 +1,275 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lengh</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r122/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #ddd;
+            font-family: 'Noto Sans JP', sans-serif;
+            letter-spacing: 2px;
+        }
+
+        #three-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        .section {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+        }
+
+        .description {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-size: 0.8em;
+            margin-top: 10px;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            fill: #ddd;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        #email-address {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 1.2em;
+            display: inline-block;
+        }
+
+        #email-address span {
+            color: #ddd;
+        }
+
+        .left-color,
+        .right-color {
+            transition: color 0.3s;
+        }
+
+        .glare-effect {
+    text-shadow: 0px 0px 4px rgba(255, 255, 255, 0.4);
+    filter: blur(0.5px);
+}
+    </style>
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div id="three-container"></div>
+
+    <div class="section glare-effect" id="section0">
+        <h1>Lengh</h1>
+    </div>
+    
+    <div class="section" id="section1">
+        <a href="https://github.com/lengh/dnd-keeping-project" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M12 1l9 4v6c0 5.5-3.8 10.7-9 12-5.2-1.3-9-6.5-9-12V5l9-4z"></path>
+            </svg>
+        </a>
+        <span class="glare-effect">dnd keeping project</span>
+        <div class="description glare-effect">a tool to keep track of a campaign as a player.</div>
+    </div>
+    
+    <div class="section" id="section2">
+        <a href="https://github.com/lengh/tiny-e-reader" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M18 2H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm0 18H6V4h2v8l2.5-1.5L13 12V4h5v16z"></path>
+            </svg>
+        </a>
+        <span class="glare-effect">tiny e-reader</span>
+        <div class="description glare-effect">a small website that loads in e-books through javascript and adds readability features.</div>
+    </div>
+    
+    <div class="section" id="section3">
+        <a href="https://github.com/lengh/rust-api" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 15.5V8c0-1.1-.9-2-2-2h-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v7.5l1.5-1.5s .2-.2.3-.4H4v-5h1v1h2v-1h10v1h2v-1h1v5h-.8l.3.4L20 15.5zM12 22h-1v-2h1v2zm-7-9H3v4.5l2 2V13zm16 0h-2v6.5l2-2V13z"></path>
+            </svg>
+        </a>
+        <span class="glare-effect">rust-api</span>
+        <div class="description glare-effect">small rust api that I use to supply data in a secure and fast manner to other projects.</div>
+    </div>
+    
+    <div class="section" id="section4">
+        <a href="https://github.com/lengh/tile-map-tool" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M4 4h16v16H4z"></path>
+            </svg>
+        </a>
+        <span class="glare-effect">tile-map tool</span>
+        <div class="description glare-effect">a small website where you can make, import, and export tilemaps that you can make and edit on the website.</div>
+    </div>
+    
+    <div class="section" id="section5">
+        <a href="https://github.com/lengh/msg-seed" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4a2 2 0 0 0-2-2zm-7 12h-2v-2h2v2zm0-4h-2V7h2v3z"></path>
+            </svg>
+        </a>
+        <span class="glare-effect">msg-seed</span>
+        <div class="description glare-effect">small msg'ing service.</div>
+    </div>
+    
+    <div class="section" id="section6">
+        <a href="https://github.com/lengh/flag-rpg" target="_blank">
+            <svg class="icon" viewBox="0 0 24 24">
+                <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4a2 2 0 0 0-2-2zm-2 14H6l-2 2V4h14v12z"></path>
+            </svg>
+        </a>
+        <span class="glare-effect">flag-rpg</span>
+        <div class="description glare-effect">a RPG where you campaign through the world as a bannerman, recruit armies, and carry your team to victory.</div>
+    </div>
+
+    <a href="mailto:vogeldraak@gmail.com" id="email-address" class="glare-effect">
+        <span class="left-color">vogeldraak</span>
+        <span class="at-color">@</span>
+        <span class="right-color">gmail.com</span>
+    </a>
+
+    <script>
+        let scene, camera, renderer, geometry, material1, material2, mesh1, mesh2;
+        let currentColorIndex = 0;
+        let currentSection = 0;
+        let colors = ['#FF0000', '#FF7F00', '#FFFF00', '#7FFF00', '#00FF00', '#00FF7F', '#00FFFF', '#007FFF', '#0000FF', '#7F00FF', '#FF00FF', '#FF007F'];
+
+        function init() {
+            scene = new THREE.Scene();
+            camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+            camera.position.z = 5;
+
+            renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.getElementById('three-container').appendChild(renderer.domElement);
+
+            geometry = new THREE.IcosahedronGeometry(1, 1);
+
+            material1 = new THREE.MeshBasicMaterial({ wireframe: true, color: colors[currentColorIndex] });
+            material2 = new THREE.MeshBasicMaterial({ wireframe: true, color: colors[(currentColorIndex + 6) % colors.length] });
+
+            mesh1 = new THREE.Mesh(geometry, material1);
+            mesh2 = new THREE.Mesh(geometry, material2);
+
+            mesh1.position.set(2.5, 2.5, 0);
+            mesh2.position.set(-2.5, -2.5, 0);
+
+            scene.add(mesh1, mesh2);
+
+            window.addEventListener('resize', onWindowResize, false);
+            document.addEventListener('wheel', onWheel, { passive: false });
+            animate();
+        }
+
+        function onWheel(event) {
+            event.preventDefault();
+
+
+            const atTop = window.scrollY === 0;
+            const atBottom = window.scrollY + window.innerHeight >= document.body.scrollHeight;
+
+            if (event.deltaY > 0 && !atBottom) {
+                if (currentSection < 6) {
+                    currentSection++;
+                }
+            } else if (event.deltaY < 0 && !atTop) {
+                if (currentSection > 0) {
+                    currentSection--;
+                }
+            }
+
+            window.scrollTo({
+                top: document.getElementById('section' + currentSection).offsetTop,
+                behavior: 'smooth'
+            });
+
+            updateMeshPosition();
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function updateMeshPosition() {
+            let targetX1 = (currentSection % 2 === 0) ? 2.5 : -2.5;
+            let targetY1 = (currentSection % 2 === 0) ? 2.5 : -2.5;
+
+            let targetX2 = (currentSection % 2 === 0) ? -2.5 : 2.5;
+            let targetY2 = (currentSection % 2 === 0) ? -2.5 : 2.5;
+
+            let dx1 = (targetX1 - mesh1.position.x) * 0.05;
+            let dy1 = (targetY1 - mesh1.position.y) * 0.05;
+
+            let dx2 = (targetX2 - mesh2.position.x) * 0.05;
+            let dy2 = (targetY2 - mesh2.position.y) * 0.05;
+
+            mesh1.position.x += dx1;
+            mesh1.position.y += dy1;
+
+            mesh2.position.x += dx2;
+            mesh2.position.y += dy2;
+
+            if (currentColorIndex !== currentSection % colors.length) {
+                currentColorIndex = currentSection % colors.length;
+                mesh1.material.color.set(colors[currentColorIndex]);
+                mesh2.material.color.set(colors[(currentColorIndex + 6) % colors.length]);
+            }
+
+            document.querySelector('.left-color').style.color = colors[currentColorIndex];
+            document.querySelector('.right-color').style.color = colors[(currentColorIndex + 6) % colors.length];
+
+            let leftRGB = hexToRgb(colors[currentColorIndex]);
+            let rightRGB = hexToRgb(colors[(currentColorIndex + 6) % colors.length]);
+
+            let atRGB = {
+                r: Math.round((leftRGB.r + rightRGB.r) / 2),
+                g: Math.round((leftRGB.g + rightRGB.g) / 2),
+                b: Math.round((leftRGB.b + rightRGB.b) / 2)
+            };
+
+            document.querySelector('.at-color').style.color = `rgb(${atRGB.r}, ${atRGB.g}, ${atRGB.b})`;
+
+            if (Math.abs(targetX1 - mesh1.position.x) > 0.05 || Math.abs(targetY1 - mesh1.position.y) > 0.05 || Math.abs(targetX2 - mesh2.position.x) > 0.05 || Math.abs(targetY2 - mesh2.position.y) > 0.05) {
+                requestAnimationFrame(updateMeshPosition);
+            }
+        }
+        function animate() {
+            requestAnimationFrame(animate);
+            renderer.render(scene, camera);
+        }
+
+
+        function hexToRgb(hex) {
+            const bigint = parseInt(hex.substring(1), 16);
+            const r = (bigint >> 16) & 255;
+            const g = (bigint >> 8) & 255;
+            const b = bigint & 255;
+            return { r, g, b };
+        }
+
+        init();
+    </script>
 </body>
+
 </html>
